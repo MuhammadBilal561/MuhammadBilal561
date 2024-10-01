@@ -1,4 +1,4 @@
-[![MasterHead](https://img.freepik.com/free-vector/frontend-developer-typographic-header-website-interface-design-improvement-web-page-programming-coding-testing-it-profession-isolated-flat-vector-illustration_613284-304.jpg?t=st=1727778096~exp=1727781696~hmac=e2f111dcb399b46a994e1baf2296f748b85c7c7aaf404d6a02d94cdff8979159&w=1060)]
+[![MasterHead](https://www.canva.com/design/DAGRY9Llyxg/t0X0tno3SYM29eMcNqUqEA/view?utm_content=DAGRY9Llyxg&utm_campaign=designshare&utm_medium=link&utm_source=editor)]
 
 <h1 align="center">Hi 👋, I'm Muhammad Bilal</h1>
 <h3 align="center">A Passionate Web Developer From Pakistan</h3>
