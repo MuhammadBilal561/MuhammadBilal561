@@ -1,4 +1,4 @@
-[![MasterHead](https://www.wpexplorer.com/wp-content/uploads/beginner-dev-skills.png)]
+[![MasterHead](https://cdn-aiiam.nitrocdn.com/AOloCrzhPaUrolPeVejnVujyrtjXSGYs/assets/images/optimized/rev-284462a/devrix.com/wp-content/uploads/2020/03/What-Is-WordPress-11-Industries-Based-on-It@2x-1-1536x645.png)]
 
 <h1 align="center">Hi 👋, I'm Muhammad Bilal</h1>
 <h3 align="center">A Passionate Web Developer From Pakistan</h3>
