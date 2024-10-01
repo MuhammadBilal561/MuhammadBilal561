@@ -1,4 +1,4 @@
-[![MasterHead](https://www.canva.com/design/DAGRY9Llyxg/t0X0tno3SYM29eMcNqUqEA/view?utm_content=DAGRY9Llyxg&utm_campaign=designshare&utm_medium=link&utm_source=editor)]
+[![MasterHead](https://www.wpexplorer.com/wp-content/uploads/beginner-dev-skills.png)]
 
 <h1 align="center">Hi 👋, I'm Muhammad Bilal</h1>
 <h3 align="center">A Passionate Web Developer From Pakistan</h3>
