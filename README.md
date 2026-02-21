@@ -4,7 +4,107 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0a0a0f,30:0f0f23,60:130d2e,100:0a0a0f&height=220&section=header&text=Muhammad%20Bilal&fontSize=58&fontColor=c7d2fe&fontAlignY=45&stroke=6366f1&strokeWidth=2&desc=Full-Stack%20Developer%20%E2%80%A2%20Gen%20AI%20Engineer%20%E2%80%A2%20UET%20Lahore&descColor=818cf8&descSize=17&descAlignY=68&animation=fadeIn" width="100%"/>
+<!-- SVG animated hacker-style header — dark bg, glowing name, scan line -->
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dark background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d1a"/>
+      <stop offset="50%" style="stop-color:#0f0f2e"/>
+      <stop offset="100%" style="stop-color:#0d0d1a"/>
+    </linearGradient>
+    <!-- Glow filter for the name -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Subtle glow for grid lines -->
+    <filter id="gridglow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Scan line animation -->
+    <linearGradient id="scanline" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#6366f1;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="200" fill="url(#bg)" rx="12"/>
+
+  <!-- Grid lines horizontal -->
+  <g stroke="#1e1e4a" stroke-width="0.5" opacity="0.6" filter="url(#gridglow)">
+    <line x1="0" y1="40" x2="900" y2="40"/>
+    <line x1="0" y1="80" x2="900" y2="80"/>
+    <line x1="0" y1="120" x2="900" y2="120"/>
+    <line x1="0" y1="160" x2="900" y2="160"/>
+  </g>
+  <!-- Grid lines vertical -->
+  <g stroke="#1e1e4a" stroke-width="0.5" opacity="0.6">
+    <line x1="150" y1="0" x2="150" y2="200"/>
+    <line x1="300" y1="0" x2="300" y2="200"/>
+    <line x1="450" y1="0" x2="450" y2="200"/>
+    <line x1="600" y1="0" x2="600" y2="200"/>
+    <line x1="750" y1="0" x2="750" y2="200"/>
+  </g>
+
+  <!-- Corner accents -->
+  <g stroke="#6366f1" stroke-width="1.5" fill="none" opacity="0.7">
+    <polyline points="20,8 8,8 8,20"/>
+    <polyline points="880,8 892,8 892,20"/>
+    <polyline points="20,192 8,192 8,180"/>
+    <polyline points="880,192 892,192 892,180"/>
+  </g>
+
+  <!-- Subtle dot top-left -->
+  <circle cx="8" cy="8" r="2" fill="#6366f1" opacity="0.9"/>
+  <circle cx="892" cy="8" r="2" fill="#a855f7" opacity="0.9"/>
+  <circle cx="8" cy="192" r="2" fill="#a855f7" opacity="0.9"/>
+  <circle cx="892" cy="192" r="2" fill="#6366f1" opacity="0.9"/>
+
+  <!-- Scan line animation -->
+  <rect width="900" height="60" fill="url(#scanline)" rx="0">
+    <animateTransform attributeName="transform" type="translate" values="0,-60;0,200;0,200" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Bracket left -->
+  <text x="58" y="108" font-family="'Courier New',monospace" font-size="52" fill="#6366f1" opacity="0.5" font-weight="100">[</text>
+  <!-- Bracket right -->
+  <text x="820" y="108" font-family="'Courier New',monospace" font-size="52" fill="#6366f1" opacity="0.5" font-weight="100">]</text>
+
+  <!-- Main name — glowing -->
+  <text x="450" y="98" text-anchor="middle" font-family="'Courier New',Consolas,monospace" font-size="42" font-weight="700" fill="#c7d2fe" filter="url(#glow)" letter-spacing="3">
+    Muhammad Bilal
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Blinking cursor after name -->
+  <rect x="707" y="68" width="3" height="36" fill="#6366f1">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Tagline -->
+  <text x="450" y="130" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" fill="#818cf8" letter-spacing="2">
+    Full-Stack Dev  •  Gen AI Engineer  •  CS @ UET Lahore
+  </text>
+
+  <!-- Status line bottom -->
+  <text x="450" y="170" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#4f5b8a" letter-spacing="1">
+    &gt; status: open_to_work  |  location: Lahore, PK  |  building: something awesome
+  </text>
+
+  <!-- Bottom indigo accent line -->
+  <line x1="100" y1="183" x2="800" y2="183" stroke="#6366f1" stroke-width="0.8" opacity="0.4"/>
+
+</svg>
 
 </div>
 
@@ -262,7 +362,8 @@ Functional billing app in vanilla JS — dynamic invoice generation, item manage
 
 <div align="center">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=MuhammadBilal561&theme=tokyo-night&bg_color=0d1117&color=c7d2fe&line=6366f1&point=a855f7&area=true&area_color=6366f1&hide_border=false&border_color=6366f1&radius=6)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<!-- ✅ This is your REAL GitHub contribution graph — auto-updates live -->
+[![MuhammadBilal561's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=MuhammadBilal561&bg_color=0d1117&color=818cf8&line=6366f1&point=c7d2fe&area=true&hide_border=true)](https://github.com/MuhammadBilal561)
 
 </div>
 
