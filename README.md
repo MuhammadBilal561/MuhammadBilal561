@@ -1,122 +1,10 @@
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                     HEADER SECTION                           -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
-<!-- SVG animated hacker-style header — dark bg, glowing name, scan line -->
-<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- Dark background gradient -->
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d0d1a"/>
-      <stop offset="50%" style="stop-color:#0f0f2e"/>
-      <stop offset="100%" style="stop-color:#0d0d1a"/>
-    </linearGradient>
-    <!-- Glow filter for the name -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <!-- Subtle glow for grid lines -->
-    <filter id="gridglow">
-      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <!-- Scan line animation -->
-    <linearGradient id="scanline" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0"/>
-      <stop offset="50%" style="stop-color:#6366f1;stop-opacity:0.12"/>
-      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0"/>
-    </linearGradient>
-  </defs>
+# Muhammad Bilal
 
-  <!-- Background -->
-  <rect width="900" height="200" fill="url(#bg)" rx="12"/>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=900&color=818CF8&center=true&vCenter=true&width=600&lines=%F0%9F%9A%80+Full-Stack+Dev+%7C+Gen+AI+Engineer+%7C+UET+Lahore)](https://git.io/typing-svg)
 
-  <!-- Grid lines horizontal -->
-  <g stroke="#1e1e4a" stroke-width="0.5" opacity="0.6" filter="url(#gridglow)">
-    <line x1="0" y1="40" x2="900" y2="40"/>
-    <line x1="0" y1="80" x2="900" y2="80"/>
-    <line x1="0" y1="120" x2="900" y2="120"/>
-    <line x1="0" y1="160" x2="900" y2="160"/>
-  </g>
-  <!-- Grid lines vertical -->
-  <g stroke="#1e1e4a" stroke-width="0.5" opacity="0.6">
-    <line x1="150" y1="0" x2="150" y2="200"/>
-    <line x1="300" y1="0" x2="300" y2="200"/>
-    <line x1="450" y1="0" x2="450" y2="200"/>
-    <line x1="600" y1="0" x2="600" y2="200"/>
-    <line x1="750" y1="0" x2="750" y2="200"/>
-  </g>
-
-  <!-- Corner accents -->
-  <g stroke="#6366f1" stroke-width="1.5" fill="none" opacity="0.7">
-    <polyline points="20,8 8,8 8,20"/>
-    <polyline points="880,8 892,8 892,20"/>
-    <polyline points="20,192 8,192 8,180"/>
-    <polyline points="880,192 892,192 892,180"/>
-  </g>
-
-  <!-- Subtle dot top-left -->
-  <circle cx="8" cy="8" r="2" fill="#6366f1" opacity="0.9"/>
-  <circle cx="892" cy="8" r="2" fill="#a855f7" opacity="0.9"/>
-  <circle cx="8" cy="192" r="2" fill="#a855f7" opacity="0.9"/>
-  <circle cx="892" cy="192" r="2" fill="#6366f1" opacity="0.9"/>
-
-  <!-- Scan line animation -->
-  <rect width="900" height="60" fill="url(#scanline)" rx="0">
-    <animateTransform attributeName="transform" type="translate" values="0,-60;0,200;0,200" dur="3s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Bracket left -->
-  <text x="58" y="108" font-family="'Courier New',monospace" font-size="52" fill="#6366f1" opacity="0.5" font-weight="100">[</text>
-  <!-- Bracket right -->
-  <text x="820" y="108" font-family="'Courier New',monospace" font-size="52" fill="#6366f1" opacity="0.5" font-weight="100">]</text>
-
-  <!-- Main name — glowing -->
-  <text x="450" y="98" text-anchor="middle" font-family="'Courier New',Consolas,monospace" font-size="42" font-weight="700" fill="#c7d2fe" filter="url(#glow)" letter-spacing="3">
-    Muhammad Bilal
-    <animate attributeName="opacity" values="0.85;1;0.85" dur="3s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Blinking cursor after name -->
-  <rect x="707" y="68" width="3" height="36" fill="#6366f1">
-    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Tagline -->
-  <text x="450" y="130" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" fill="#818cf8" letter-spacing="2">
-    Full-Stack Dev  •  Gen AI Engineer  •  CS @ UET Lahore
-  </text>
-
-  <!-- Status line bottom -->
-  <text x="450" y="170" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#4f5b8a" letter-spacing="1">
-    &gt; status: open_to_work  |  location: Lahore, PK  |  building: something awesome
-  </text>
-
-  <!-- Bottom indigo accent line -->
-  <line x1="100" y1="183" x2="800" y2="183" stroke="#6366f1" stroke-width="0.8" opacity="0.4"/>
-
-</svg>
-
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                     TYPING + BADGES                           -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-<br/>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=2600&pause=800&color=818CF8&center=true&vCenter=true&width=580&lines=%F0%9F%9A%80+Building+full-stack+products+people+love;%F0%9F%A4%96+Exploring+Gen+AI+%26+LLMs;%F0%9F%8E%93+CS+Student+%40+UET+Lahore+%E2%80%94+Pakistan;%F0%9F%92%BC+Open+to+Work+%E2%80%94+Internships+%26+Freelance;%E2%9A%A1+React+%7C+Next.js+%7C+TypeScript+%7C+Node.js)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=15&duration=2600&pause=900&color=6366F1&center=true&vCenter=true&width=600&lines=React+%7C+Next.js+%7C+TypeScript+%7C+Node.js+%7C+Python;Open+to+Work+%E2%80%94+Internships+%26+Freelance+%F0%9F%92%BC;Building+things+that+actually+matter+%F0%9F%94%A5)](https://git.io/typing-svg)
 
 <br/>
 
@@ -124,21 +12,15 @@
 &nbsp;
 [![GitHub followers](https://img.shields.io/github/followers/MuhammadBilal561?style=flat-square&color=6366f1&label=Followers&logo=github)](https://github.com/MuhammadBilal561)
 &nbsp;
-[![GitHub Stars](https://img.shields.io/github/stars/MuhammadBilal561?style=flat-square&color=a855f7&label=Stars&logo=github)](https://github.com/MuhammadBilal561)
+[![Stars](https://img.shields.io/github/stars/MuhammadBilal561?style=flat-square&color=a855f7&label=Stars&logo=github)](https://github.com/MuhammadBilal561)
 &nbsp;
 ![Open to Work](https://img.shields.io/badge/%F0%9F%92%BC_Open_to_Work-22c55e?style=flat-square)
 
 </div>
 
-<br/>
+---
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                     ABOUT ME                                  -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-## &nbsp;🧬 &nbsp;`whoami`
+## 🧬 `whoami`
 
 ```typescript
 const MuhammadBilal = {
@@ -146,132 +28,85 @@ const MuhammadBilal = {
   university  : "UET Lahore — B.Sc. Computer Science 🎓",
   roles       : ["Full-Stack Developer", "Gen AI Engineer", "Frontend Dev"],
   stack       : ["Next.js", "React", "TypeScript", "Node.js", "Python"],
-  currentFocus: ["C++ & DSA", "Gen AI / LLMs", "System Design", "Python"],
-  askMeAbout  : ["React", "TypeScript", "Next.js", "WordPress", "REST APIs"],
+  currentFocus: ["C++ & DSA", "Gen AI / LLMs", "System Design"],
   available   : true,  // ← actively seeking internships & jobs 💼
   portfolio   : "https://muhammadbilal.free.nf",
   email       : "bilalrehan013@gmail.com",
-  motto       : "Ship fast. Learn faster. Build things that matter. 🔥",
 } as const;
 ```
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                     PROJECTS                                   -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## &nbsp;🚀 &nbsp;Featured Projects
-
-<div align="center">
-
-> *Real products. Real code. Real impact.*
-
-</div>
-
-<br/>
+## 🚀 Featured Projects
 
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
 
-<div align="center">
+### 🛒 Hackathon E-Commerce
 
-### 🛒 &nbsp;Hackathon E-Commerce
+Full e-commerce platform built under hackathon pressure — listings, cart, checkout.
 
-</div>
+[![Repo](https://img.shields.io/badge/View_Source-1e1e2e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MuhammadBilal561/hackathon-ecommerce)
+[![Demo](https://img.shields.io/badge/Live_Demo-000?style=for-the-badge&logo=vercel&logoColor=white)](#)
 
-A fully-functional e-commerce platform shipped under hackathon pressure — product listings, cart system and complete checkout flow.
-
-<div align="center">
-
-[![Repo](https://img.shields.io/badge/‎%20View%20Source-1e1e2e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MuhammadBilal561/hackathon-ecommerce)&nbsp;[![Demo](https://img.shields.io/badge/‎%20Live%20Demo-000?style=for-the-badge&logo=vercel&logoColor=white)](#)
-
-</div>
-
-![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=nextdotjs&logoColor=white)&nbsp;![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)&nbsp;![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
 
 </td>
 <td width="50%" valign="top">
 
-<div align="center">
+### 🏪 Product Store — Full Stack
 
-### 🏪 &nbsp;Product Store — Full Stack
+REST API + MERN stack product store. Frontend on Vercel, backend on Node/Express.
 
-</div>
+[![Repo](https://img.shields.io/badge/View_Source-1e1e2e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MuhammadBilal561/Product-Store)
+[![Demo](https://img.shields.io/badge/Live_on_Vercel-000?style=for-the-badge&logo=vercel&logoColor=white)](https://github.com/MuhammadBilal561/Product-Store)
 
-MERN-style product store with a custom REST API. Frontend deployed on Vercel, backend on Node/Express, data in MongoDB.
-
-<div align="center">
-
-[![Repo](https://img.shields.io/badge/‎%20View%20Source-1e1e2e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MuhammadBilal561/Product-Store)&nbsp;[![Demo](https://img.shields.io/badge/‎%20Live%20on%20Vercel-000?style=for-the-badge&logo=vercel&logoColor=white)](https://github.com/MuhammadBilal561/Product-Store)
-
-</div>
-
-![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=nextdotjs&logoColor=white)&nbsp;![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)&nbsp;![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 
 </td>
 </tr>
-
-<tr><td colspan="2"><br/></td></tr>
-
 <tr>
 <td width="50%" valign="top">
 
-<div align="center">
+### 🧑‍💼 Employee Management System
 
-### 🧑‍💼 &nbsp;Employee Management System
+C++ OOP deep dive — CRUD, file I/O, class hierarchies. A real engineering project.
 
-</div>
+[![Repo](https://img.shields.io/badge/View_Source-1e1e2e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MuhammadBilal561/employee-management-system)
 
-Deep-dive into C++ OOP — full CRUD, file I/O, class hierarchies. A real engineering project, not just a tutorial clone.
-
-<div align="center">
-
-[![Repo](https://img.shields.io/badge/‎%20View%20Source-1e1e2e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MuhammadBilal561/employee-management-system)
-
-</div>
-
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)&nbsp;![OOP](https://img.shields.io/badge/OOP_Design-6366f1?style=flat-square)&nbsp;![File I/O](https://img.shields.io/badge/File_I%2FO-a855f7?style=flat-square)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![OOP](https://img.shields.io/badge/OOP_Design-6366f1?style=flat-square)
+![File I/O](https://img.shields.io/badge/File_I%2FO-a855f7?style=flat-square)
 
 </td>
 <td width="50%" valign="top">
 
-<div align="center">
+### 🧾 JS Billing Application
 
-### 🧾 &nbsp;JS Billing Application
+Vanilla JS billing app — invoice generation, item management, live totals. No frameworks, pure skill.
 
-</div>
+[![Repo](https://img.shields.io/badge/View_Source-1e1e2e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MuhammadBilal561/JS_BillingApp)
 
-Functional billing app in vanilla JS — dynamic invoice generation, item management, live total calculation. Zero frameworks, pure skill.
-
-<div align="center">
-
-[![Repo](https://img.shields.io/badge/‎%20View%20Source-1e1e2e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MuhammadBilal561/JS_BillingApp)
-
-</div>
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)&nbsp;![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)&nbsp;![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
 </td>
 </tr>
 </table>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                     TECH STACK                                 -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## &nbsp;🧠 &nbsp;Tech Stack & Tools
+## 🧠 Tech Stack
 
 <div align="center">
 
-### ⬡ &nbsp;Frontend
+**Frontend**
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
@@ -279,20 +114,17 @@ Functional billing app in vanilla JS — dynamic invoice generation, item manage
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-### ⬡ &nbsp;Backend & Databases
+**Backend & Databases**
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-6366f1?style=for-the-badge&logo=fastapi&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
-### ⬡ &nbsp;AI & Core Languages
+**Languages & AI**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
@@ -300,145 +132,64 @@ Functional billing app in vanilla JS — dynamic invoice generation, item manage
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
 
-### ⬡ &nbsp;Tools & Design
+**Tools**
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![WordPress](https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Photoshop](https://img.shields.io/badge/Photoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                   LEARNING ROADMAP                            -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## &nbsp;📈 &nbsp;Current Learning Roadmap
+## 📈 Currently Learning
 
 <div align="center">
 
-| &nbsp;🎯 Topic | &nbsp;📊 Progress | &nbsp;Status |
+| 🎯 Topic | 📊 Progress | Status |
 |:---|:---|:---:|
-| **C++ & Data Structures** | `████████░░` &nbsp;80% | 🔥 Active |
-| **Gen AI & LLMs** | `██████░░░░` &nbsp;60% | 🤖 Building |
-| **Next.js — Advanced Patterns** | `████████░░` &nbsp;80% | 🚀 Deepening |
-| **Python for AI/ML** | `█████░░░░░` &nbsp;50% | 🐍 In Progress |
-| **System Design** | `███░░░░░░░` &nbsp;30% | 📐 Starting |
+| **C++ & Data Structures** | `████████░░` 80% | 🔥 Active |
+| **Gen AI & LLMs** | `██████░░░░` 60% | 🤖 Building |
+| **Next.js Advanced** | `████████░░` 80% | 🚀 Deepening |
+| **Python for AI/ML** | `█████░░░░░` 50% | 🐍 In Progress |
+| **System Design** | `███░░░░░░░` 30% | 📐 Starting |
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                     GITHUB STATS                              -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## &nbsp;📊 &nbsp;GitHub Stats
+## 📊 GitHub Stats
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=MuhammadBilal561&show_icons=true&theme=tokyonight&border_color=6366f1&border_radius=10&include_all_commits=true&count_private=true&title_color=c7d2fe&icon_color=818cf8&text_color=a5b4fc&bg_color=0d1117"/>
-&nbsp;&nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadBilal561&layout=compact&langs_count=8&theme=tokyonight&border_color=6366f1&border_radius=10&title_color=c7d2fe&text_color=a5b4fc&bg_color=0d1117"/>
-
-</div>
-
-<div align="center">
+<img height="175em" src="https://github-readme-stats.vercel.app/api?username=MuhammadBilal561&show_icons=true&theme=tokyonight&border_color=6366f1&border_radius=10&include_all_commits=true&count_private=true&title_color=c7d2fe&icon_color=818cf8&text_color=a5b4fc&bg_color=0d1117"/>
+&nbsp;
+<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadBilal561&layout=compact&langs_count=8&theme=tokyonight&border_color=6366f1&border_radius=10&title_color=c7d2fe&text_color=a5b4fc&bg_color=0d1117"/>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhammadBilal561&theme=tokyonight&border=6366f1&stroke=6366f1&ring=a855f7&fire=f472b6&currStreakLabel=c7d2fe&sideLabels=a5b4fc&dates=6b7280&background=0d1117&border_radius=10"/>
 
 </div>
 
-<br/>
+---
+
+## 🏆 Trophies
 
 <div align="center">
 
-### 📅 &nbsp;Contribution Activity
-
-> *Every green square = a day I showed up and shipped something.*
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=MuhammadBilal561&bg_color=0d1117&color=c7d2fe&line=6366f1&point=a855f7&area=true&area_color=6366f133&hide_border=true&custom_title=Muhammad%20Bilal%20—%20Contribution%20Graph%20(Last%2031%20Days)&radius=4)](https://github.com/MuhammadBilal561)
-
-| 📌 What this shows | ✅ Why it matters |
-|:---|:---|
-| **Commits per day** over the last 31 days | Shows consistency — not just skill |
-| **Blue line** = commit frequency | Peaks = active sprint / project push |
-| **Shaded area** = volume over time | Steady curve = reliable developer |
+[![trophy](https://github-profile-trophy.vercel.app/?username=MuhammadBilal561&theme=tokyonight&column=6&margin-w=10&no-bg=true)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                     TROPHIES                                   -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## &nbsp;🏆 &nbsp;GitHub Trophies
+## 🌐 Connect
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=MuhammadBilal561&theme=tokyonight&column=6&margin-w=10&margin-h=10&no-bg=true&no-frame=false)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                     QUOTE                                      -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## &nbsp;💬 &nbsp;Dev Philosophy
-
-<div align="center">
-
-<table border="0">
-<tr>
-<td align="center" width="100%">
-
-&nbsp;
-
-**`"` &nbsp;The best code isn't the cleverest —**
-**it's the one that ships, solves a real problem,**
-**and someone else can actually read. &nbsp;`"`**
-
-&nbsp;
-
-*— Muhammad Bilal*
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                     CONNECT                                    -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-## &nbsp;🌐 &nbsp;Let's Connect & Build Together
-
-<div align="center">
-
-<br/>
-
-[![Portfolio](https://img.shields.io/badge/🌍_Portfolio-0f0f23?style=for-the-badge&logoColor=white)](https://muhammadbilal.free.nf)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0f0f23?style=for-the-badge&logo=google-chrome&logoColor=white)](https://muhammadbilal.free.nf)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammadbilal561)
 [![Twitter](https://img.shields.io/badge/Twitter-1D9BF0?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/_m_bilal_561)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/ch_bilal_561)
@@ -447,14 +198,8 @@ Functional billing app in vanilla JS — dynamic invoice generation, item manage
 
 <br/>
 
-![Wave](https://img.shields.io/badge/💼_Actively_seeking_internships,_junior_dev_roles_&_freelance_work-1e1e2e?style=for-the-badge)
-
-<br/>
-
-**📬 &nbsp;bilalrehan013@gmail.com &nbsp;—&nbsp; I reply fast ⚡**
-
-<br/>
+**💼 Open to internships, junior dev roles & freelance — bilalrehan013@gmail.com ⚡**
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,50:130d2e,100:0a0a0f&height=130&section=footer&fontColor=c7d2fe" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,50:130d2e,100:0a0a0f&height=100&section=footer" width="100%"/>
