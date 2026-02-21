@@ -362,8 +362,17 @@ Functional billing app in vanilla JS — dynamic invoice generation, item manage
 
 <div align="center">
 
-<!-- ✅ This is your REAL GitHub contribution graph — auto-updates live -->
-[![MuhammadBilal561's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=MuhammadBilal561&bg_color=0d1117&color=818cf8&line=6366f1&point=c7d2fe&area=true&hide_border=true)](https://github.com/MuhammadBilal561)
+### 📅 &nbsp;Contribution Activity
+
+> *Every green square = a day I showed up and shipped something.*
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=MuhammadBilal561&bg_color=0d1117&color=c7d2fe&line=6366f1&point=a855f7&area=true&area_color=6366f133&hide_border=true&custom_title=Muhammad%20Bilal%20—%20Contribution%20Graph%20(Last%2031%20Days)&radius=4)](https://github.com/MuhammadBilal561)
+
+| 📌 What this shows | ✅ Why it matters |
+|:---|:---|
+| **Commits per day** over the last 31 days | Shows consistency — not just skill |
+| **Blue line** = commit frequency | Peaks = active sprint / project push |
+| **Shaded area** = volume over time | Steady curve = reliable developer |
 
 </div>
 
