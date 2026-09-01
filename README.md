@@ -2,7 +2,7 @@
 
 # Muhammad Bilal
 
-System engineering building AI-native systems that reason, act, and ship.
+Software engineer building AI-native systems that reason, act, and ship.
 
 <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=20&pause=1200&color=8B5CF6&center=true&vCenter=true&width=560&lines=The+model+proposes.+The+backend+decides." alt="tagline" />
 
@@ -19,25 +19,25 @@ System engineering building AI-native systems that reason, act, and ship.
 
 ```mermaid
 flowchart LR
-    A[LLM Agent] -->|proposes action| B[Backend Validator]
-    B -->|approved| C[Execute]
-    B -->|rejected| D[Reject / No side effect]
+    A(["🧠 LLM"]):::model -->|proposes an action| B{"🛡️ Validator"}:::validator
+    B -->|approved| C[("⚙️ Execute")]:::go
+    B -->|rejected| D["↩️ Explain — no side effect"]:::stop
 
-    classDef model fill:#8B5CF6,stroke:#6D28D9,color:#fff,font-weight:bold;
-    classDef validator fill:#1E1B4B,stroke:#8B5CF6,color:#C7D2FE,font-weight:bold;
-    classDef go fill:#0D1117,stroke:#10B981,color:#10B981,stroke-width:2px;
-    classDef stop fill:#0D1117,stroke:#EF4444,color:#EF4444,stroke-width:2px;
+    classDef model fill:#8B5CF6,stroke:#6D28D9,color:#fff
+    classDef validator fill:#1E1B4B,stroke:#8B5CF6,color:#C7D2FE
+    classDef go fill:#0D1117,stroke:#8B5CF6,color:#8B5CF6
+    classDef stop fill:#0D1117,stroke:#EF4444,color:#EF4444
 ```
 
 I don't trust a model with unrestricted access to a real system. Every project below is that rule, applied to a different domain.
 
 ```mermaid
 flowchart TD
-    P[propose -> validate -> execute]
-    P --> R[RelayOS - Calendar Booking]
-    P --> Bi[Bidently - Proposal Drafting]
-    P --> T[TradeMind - Paper Trading]
-    P --> S[SocratIQ - Mastery Gate]
+    P(["propose → validate → execute"]):::core
+    P --> R["🏢 RelayOS — books a real calendar slot"]:::proof
+    P --> Bi["📄 Bidently — drafts from real proposal history"]:::proof
+    P --> T["📈 TradeMind — executes a real paper trade"]:::proof
+    P --> S["🧩 SocratIQ — unlocks an answer only after a real attempt"]:::proof
 
     classDef core fill:#8B5CF6,stroke:#6D28D9,color:#fff
     classDef proof fill:#0D1117,stroke:#8B5CF6,color:#C9D1D9
@@ -104,7 +104,7 @@ The agent is never allowed to call `create_booking` without a preceding `check_a
 
 <div align="center">
 
-**build -> validate -> ship**
+**build → validate → ship**
 
 Open to internships & collaboration — [Email](mailto:bilalrehan013@gmail.com) · [LinkedIn](https://www.linkedin.com/in/muhammadbilal561)
 
