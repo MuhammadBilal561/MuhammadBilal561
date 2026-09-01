@@ -23,10 +23,10 @@ flowchart LR
     B -->|approved| C[("⚙️ Execute")]:::go
     B -->|rejected| D["↩️ Explain — no side effect"]:::stop
 
-    classDef model fill:#8B5CF6,stroke:#6D28D9,color:#fff
-    classDef validator fill:#1E1B4B,stroke:#8B5CF6,color:#C7D2FE
-    classDef go fill:#0D1117,stroke:#8B5CF6,color:#8B5CF6
-    classDef stop fill:#0D1117,stroke:#EF4444,color:#EF4444
+    classDef model fill:#8B5CF6,stroke:#6D28D9,color:#fff,font-weight:bold;
+    classDef validator fill:#1E1B4B,stroke:#8B5CF6,color:#C7D2FE,font-weight:bold;
+    classDef go fill:#0D1117,stroke:#10B981,color:#10B981,stroke-width:2px;
+    classDef stop fill:#0D1117,stroke:#EF4444,color:#EF4444,stroke-width:2px;
 ```
 
 I don't trust a model with unrestricted access to a real system. Every project below is that rule, applied to a different domain.
