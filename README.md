@@ -2,7 +2,7 @@
 
 # Muhammad Bilal
 
-Software engineer building AI-native systems that reason, act, and ship.
+System engineering and building AI-native systems that reason, act, and ship.
 
 <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=20&pause=1200&color=8B5CF6&center=true&vCenter=true&width=560&lines=The+model+proposes.+The+backend+decides." alt="tagline" />
 
