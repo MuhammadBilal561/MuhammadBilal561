@@ -39,41 +39,41 @@ No magic. No blind trust. Just useful software with clear boundaries.
 
 Customer conversations → knowledge retrieval → lead qualification → real calendar booking → human handoff.
 
-`Next.js` `TypeScript` `Supabase` `Postgres` `pgvector` `Function Calling`
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white) ![Postgres](https://img.shields.io/badge/Postgres-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![pgvector](https://img.shields.io/badge/pgvector-336791?style=flat-square) ![Function Calling](https://img.shields.io/badge/Function_Calling-412991?style=flat-square)
 
 ### [`Bidently`](https://github.com/MuhammadBilal561/Bidently)
 **Tender intelligence & proposal workflow**
 
 Turns large tender documents into structured requirements, qualification checks, compliance analysis, and grounded proposal drafts.
 
-`Next.js` `TypeScript` `Postgres` `Drizzle` `RAG` `Gemini`
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Postgres](https://img.shields.io/badge/Postgres-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Drizzle](https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logoColor=black) ![RAG](https://img.shields.io/badge/RAG-412991?style=flat-square) ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
 
 ### [`TradeMind`](https://github.com/MuhammadBilal561/TradeMind)
 **Agentic trading on paper markets**
 
 Natural-language strategy → structured decision → server-side risk checks → paper execution.
 
-`TypeScript` `React` `Supabase` `OpenRouter` `Alpaca`
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white) ![OpenRouter](https://img.shields.io/badge/OpenRouter-412991?style=flat-square) ![Alpaca](https://img.shields.io/badge/Alpaca-475569?style=flat-square)
 
 ### [`SocratIQ`](https://github.com/MuhammadBilal561/SocratIQ)
 **DSA tutor that refuses to give away the answer**
 
 A Socratic AI workflow designed around guided reasoning, mastery tracking, and interactive problem solving.
 
-`TypeScript` `React` `Supabase` `Gemini`
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white) ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
 
 ### [`PLANTEA`](https://github.com/MuhammadBilal561/PLANTEA)
 **Marketplace for buyers, sellers & delivery riders**
 
 A full-stack mobile app with role-based workflows, ordering, delivery, authentication, and AI plant identification.
 
-`React Native` `Node.js` `Express` `SQLite` `JWT`
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
 
 ---
 
 ## `/stack`
 
-![Skills](https://skillicons.dev/icons?i=ts,js,py,cpp,cs,react,nextjs,nodejs,express,tailwind,postgres,mongodb,sqlite,git,github,docker,linux,vercel&perline=9)
+![Skills](https://skillicons.dev/icons?i=ts,js,py,cpp,cs,react,nextjs,nodejs,express,tailwind,postgres,mongodb,mysql,sqlite,git,github,docker,linux,vercel&perline=10)
 
 **Also using**
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white) ![pgvector](https://img.shields.io/badge/pgvector-336791?style=flat-square) ![Drizzle](https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logoColor=black) ![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white)
@@ -85,9 +85,11 @@ A full-stack mobile app with role-based workflows, ordering, delivery, authentic
 
 ## `/activity`
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MuhammadBilal561&show_icons=true&hide_border=true&bg_color=0D1117&title_color=C7D2FE&icon_color=8B5CF6&text_color=94A3B8) ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadBilal561&layout=compact&hide_border=true&bg_color=0D1117&title_color=C7D2FE&text_color=94A3B8)
+![Followers](https://img.shields.io/github/followers/MuhammadBilal561?style=flat-square&color=8B5CF6&label=Followers&logo=github&logoColor=white) ![Public Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMuhammadBilal561&label=Repos&query=%24.public_repos&color=8B5CF6&style=flat-square)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=MuhammadBilal561&hide_border=true&background=0D1117&ring=8B5CF6&fire=8B5CF6&currStreakLabel=C7D2FE&sideLabels=94A3B8&dates=94A3B8)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MuhammadBilal561&show_icons=true&hide_border=true&bg_color=0D1117&title_color=C7D2FE&icon_color=8B5CF6&text_color=94A3B8&cache_seconds=1800) ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadBilal561&layout=compact&hide_border=true&bg_color=0D1117&title_color=C7D2FE&text_color=94A3B8&cache_seconds=1800)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=MuhammadBilal561&hide_border=true&background=0D1117&ring=8B5CF6&fire=8B5CF6&currStreakLabel=C7D2FE&sideLabels=94A3B8&dates=94A3B8&disable_animations=true)
 
 ---
 
