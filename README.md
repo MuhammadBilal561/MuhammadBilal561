@@ -19,23 +19,58 @@ Software engineer building AI-native systems that reason, act, and ship.
 
 ```mermaid
 flowchart LR
-    A(["🧠 LLM"]) -->|proposes an action| B{"🛡️ Backend validator"}
-    B -->|permitted & within limits| C[("⚙️ Execute")]
-    B -->|rejected| D["↩️ Explain why, no side effect"]
+    A(["🧠 LLM"]):::model -->|proposes an action| B{"🛡️ Validator"}:::validator
+    B -->|approved| C[("⚙️ Execute")]:::go
+    B -->|rejected| D["↩️ Explain — no side effect"]:::stop
+
+    classDef model fill:#8B5CF6,stroke:#6D28D9,color:#fff
+    classDef validator fill:#1E1B4B,stroke:#8B5CF6,color:#C7D2FE
+    classDef go fill:#0D1117,stroke:#8B5CF6,color:#8B5CF6
+    classDef stop fill:#0D1117,stroke:#EF4444,color:#EF4444
 ```
 
-I don't trust a model with unrestricted access to a real system. Every project below is that same rule, applied to a different domain.
+I don't trust a model with unrestricted access to a real system. Every project below is that rule, applied to a different domain.
 
 ```mermaid
 flowchart TD
-    P(["propose → validate → execute"])
-    P --> R["🏢 RelayOS — books a real calendar appointment"]
-    P --> Bi["📄 Bidently — drafts a proposal grounded in real history"]
-    P --> T["📈 TradeMind — executes a real paper trade"]
-    P --> S["🧩 SocratIQ — reveals an answer only after a real mastery gate"]
+    P(["propose → validate → execute"]):::core
+    P --> R["🏢 RelayOS — books a real calendar slot"]:::proof
+    P --> Bi["📄 Bidently — drafts from real proposal history"]:::proof
+    P --> T["📈 TradeMind — executes a real paper trade"]:::proof
+    P --> S["🧩 SocratIQ — unlocks an answer only after a real attempt"]:::proof
+
+    classDef core fill:#8B5CF6,stroke:#6D28D9,color:#fff
+    classDef proof fill:#0D1117,stroke:#8B5CF6,color:#C9D1D9
 ```
 
-`PLANTEA` sits underneath all of it — the full-stack foundation (auth, roles, data, mobile) the pattern above is built on top of.
+`PLANTEA` is the full-stack foundation underneath all of it — auth, roles, real data, mobile — the ground the pattern above stands on.
+
+<details>
+<summary><strong>Zoom in: how RelayOS actually enforces this, request by request</strong></summary>
+
+```mermaid
+sequenceDiagram
+    participant V as Visitor
+    participant W as Widget
+    participant A as Agent (LLM)
+    participant Val as Validator
+    participant Cal as Google Calendar
+
+    V->>W: "Book me Tuesday at 3pm"
+    W->>A: forward message + context
+    A->>Val: propose create_booking(slot)
+    Val->>Cal: check_availability()
+    Cal-->>Val: slot free
+    Val->>Cal: create_booking()
+    Cal-->>Val: confirmed
+    Val-->>A: booking success
+    A-->>W: "You're booked for Tuesday 3pm"
+    W-->>V: confirmation shown
+```
+
+The agent is never allowed to call `create_booking` without a preceding `check_availability` in the same conversation — enforced in the system prompt and verifiable in the logged tool-call history, not just assumed.
+
+</details>
 
 ---
 
@@ -44,10 +79,17 @@ flowchart TD
 | | Problem | Boundary that makes it real, not a demo |
 |---|---|---|
 | **[RelayOS](https://github.com/MuhammadBilal561/RelayOS)** | Businesses lose leads because nobody replies fast enough | Every booking runs through a server-validated function — the AI can't touch the calendar directly |
-| **[Bidently](https://github.com/MuhammadBilal561/Bidently)** | Tender responses take days and are easy to get wrong | Proposal drafts are grounded in the org's own past submissions, not generated from nothing |
-| **[TradeMind](https://github.com/MuhammadBilal561/TradeMind)** | "Let the AI trade for me" is usually reckless | Risk checks sit between the agent's decision and the actual order — paper markets only |
-| **[SocratIQ](https://github.com/MuhammadBilal561/SocratIQ)** | AI tutoring usually just gives the answer away | The solution is withheld until you've actually attempted it |
+| **[Bidently](https://github.com/MuhammadBilal561/Bidently)** | Tender responses take days and are easy to get wrong | Drafts are grounded in the org's own past submissions, not generated from nothing |
+| **[TradeMind](https://github.com/MuhammadBilal561/TradeMind)** | "Let the AI trade for me" is usually reckless | Risk checks sit between the agent's decision and the order — paper markets only |
+| **[SocratIQ](https://github.com/MuhammadBilal561/SocratIQ)** | AI tutoring usually just hands you the answer | The solution stays hidden until you've actually attempted it |
 | **[PLANTEA](https://github.com/MuhammadBilal561/PLANTEA)** | Full-stack mobile marketplace, three real user roles | Buyers, sellers, and delivery riders — not a single-user CRUD demo |
+
+<details>
+<summary><strong>RelayOS, in more detail</strong></summary>
+
+Multi-tenant from the ground up — Postgres Row Level Security enforces that one business's leads and conversations are structurally invisible to another, not just filtered in application code. Knowledge-base answers are retrieval-grounded: if the answer isn't in the ingested content, the agent says so instead of inventing a price or policy.
+
+</details>
 
 ---
 
@@ -60,7 +102,9 @@ flowchart TD
 </div>
 
 **AI layer** — LLM function-calling · RAG · pgvector · agentic workflows
-**Building toward** — Go · Kubernetes (starting from a real `HAMi` PR, not yet shipped)
+
+> [!NOTE]
+> Currently building toward **Go** and **Kubernetes** — starting from a real PR into `HAMi`, not claiming it before it's shipped.
 
 ---
 
