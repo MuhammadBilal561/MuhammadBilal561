@@ -1,10 +1,6 @@
 <h1 align="center">Hi 👋, I'm Muhammad Bilal</h1>
 <h3 align="center">AI System Engineering - Building Secure AI-native systems that reason, act, and ship.</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=muhammadbilal561&label=Profile%20views&color=0e75b6&style=flat" alt="muhammadbilal561" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=muhammadbilal561" alt="muhammadbilal561" /></a> </p>
-
 <p align="left"> <a href="https://twitter.com/_m_bilal_561" target="blank"><img src="https://img.shields.io/twitter/follow/_m_bilal_561?logo=twitter&style=for-the-badge" alt="_m_bilal_561" /></a> </p>
 
 - 🔭 I’m currently working on [TCP Load Balancer](https://github.com/MuhammadBilal561/TCP-Load-Balancer)
