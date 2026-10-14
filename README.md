@@ -1,4 +1,4 @@
-# Muhammad Bilal
+<h1 align="center">Muhammad Bilal</h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=AI+Systems+Engineer;Building+Secure+AI-Native+Systems;Backend+Infrastructure+%26+Distributed+Systems" alt="AI Systems Engineering tagline" />
